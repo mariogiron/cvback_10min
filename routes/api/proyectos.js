@@ -4,6 +4,7 @@ const { check, validationResult } = require('express-validator');
 const Proyecto = require('../../models/proyecto');
 
 router.get('/', async (req, res) => {
+    console.log(req.payload);
     try {
         const proyectos = await Proyecto.find();
         res.json(proyectos);
