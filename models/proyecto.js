@@ -6,7 +6,11 @@ let proyectoSchema = new Schema({
     descripcion: String,
     url: String,
     cliente: String,
-    url_cliente: String
+    url_cliente: String,
+    categoria: {
+        type: String,
+        enum: ['angular', 'wordpress', 'nodejs', 'frontend', 'backend']
+    }
 });
 
 module.exports = mongoose.model('Proyecto', proyectoSchema);

@@ -1,28 +1,36 @@
 GET http://localhost:3000/api/proyectos
-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTg5ODI2MzE4LCJleHBpcmVkQXQiOjE1ODk4MjY2MTh9.CajCpzzGGkwpAVXW7YqOU7amDPFwL9EAnGPSoTcuDyM
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTg5ODI3MzQ0LCJleHBpcmVkQXQiOjE1ODk4Mjc2NDR9.fV31EEWoyx-LULeeS4GIrFL31iv8Keu0s_JXzMZqrLY
+
+###
+GET http://localhost:3000/api/proyectos/wordpress
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTg5ODI3NjY5LCJleHBpcmVkQXQiOjE1OTAyNTk2Njl9.JrLHqoSGRx4THb7d3GcEeoJw9f1it835RTw-6mRO3VQ
 
 ###
 POST http://localhost:3000/api/proyectos
 Content-Type: application/json
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTg5ODI3MzQ0LCJleHBpcmVkQXQiOjE1ODk4Mjc2NDR9.fV31EEWoyx-LULeeS4GIrFL31iv8Keu0s_JXzMZqrLY
 
 {
-    "titulo": "Proyecto",
-    "descripcion": "Esta es la descripción",
+    "titulo": "CV Web",
+    "descripcion": "Creación Live Coding 10 Min Programando",
     "url": "http://www.google.es",
-    "cliente": "Google",
-    "url_cliente": "http://www.google.com/quien-somos"
+    "cliente": "10 Min Programando",
+    "url_cliente": "http://www.google.com/quien-somos",
+    "categoria": "rails"
 }
 
 ###
 PUT http://localhost:3000/api/proyectos/5eb99e7fd9a6130d7b5c9d8e
 Content-Type: application/json
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTg5ODI3NjY5LCJleHBpcmVkQXQiOjE1OTAyNTk2Njl9.JrLHqoSGRx4THb7d3GcEeoJw9f1it835RTw-6mRO3VQ
 
 {
     "titulo": "Proyecto EDITADO V2",
     "descripcion": "Esta es la descripción",
     "url": "http://www.google.es",
     "cliente": "Google",
-    "url_cliente": "http://www.google.com/quien-somos"
+    "url_cliente": "http://www.google.com/quien-somos",
+    "categoria": "nodejs"
 }
 
 ###
@@ -30,3 +38,10 @@ DELETE http://localhost:3000/api/proyectos/5eb99e6bd9a6130d7b5c9d8d
 
 ###
 GET http://localhost:3000/api/token
+
+### PRODUCCIÓN
+GET https://cvback-10min.herokuapp.com/api/proyectos
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiSnVhbmFuIiwiY3JlYXRlZEF0IjoxNTg5ODI2ODk4LCJleHBpcmVkQXQiOjE1ODk4MjcxOTh9.bMKsGydoH4PprcU-kS63EaXPNl4Y0SfWn_D3n-LCHfo
+
+### 
+GET https://cvback-10min.herokuapp.com/api/token
