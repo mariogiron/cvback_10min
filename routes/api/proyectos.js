@@ -13,10 +13,19 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/:categoria', async (req, res) => {
+router.get('/categoria/:categoria', async (req, res) => {
     try {
         const proyectos = await Proyecto.find({ categoria: req.params.categoria });
         res.json(proyectos);
+    } catch (err) {
+        res.status(503).json({ 'error': err });
+    }
+});
+
+router.get('/:idProyecto', async (req, res) => {
+    try {
+        const proyecto = await Proyecto.findById(req.params.idProyecto);
+        res.json(proyecto);
     } catch (err) {
         res.status(503).json({ 'error': err });
     }

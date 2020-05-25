@@ -1,0 +1,34 @@
+<h4>Crea nuevo proyecto</h4>
+<form action="/proyectos/create" method="POST">
+    <div class="form-group">
+        <label>Título</label>
+        <input type="text" name="titulo" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Descripción</label>
+        <input type="text" name="descripcion" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Url</label>
+        <input type="text" name="url" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Cliente</label>
+        <input type="text" name="cliente" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Url Cliente</label>
+        <input type="text" name="url_cliente" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Categoría</label>
+        <select name="categoria" class="form-control">
+            <option value="angular">Angular</option>
+            <option value="wordpress">Wordpress</option>
+            <option value="nodejs">NodeJS</option>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+        </select>
+    </div>
+    <input type="submit" value="Enviar" class="btn btn-block btn-primary">
+</form>

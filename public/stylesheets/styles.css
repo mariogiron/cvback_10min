@@ -1,0 +1,14 @@
+.proyecto {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.proyecto h4 {
+    background-color: wheat;
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+}
